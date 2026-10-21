@@ -20,7 +20,6 @@ int main()
     {
         s[0] = toupper(s[0]); // Only first character is uppercase.
     }
-
     cout << s << endl;
 
     return 0;
