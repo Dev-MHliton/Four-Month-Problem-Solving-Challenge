@@ -16,9 +16,9 @@ int main()
     string s;
     cin >> s;
 
-    for (int i = 0; i < s.size(); i++)
+    for (int i = 0; i < s.size(); i++) // don't using loop but i'm using loop.
     {
-        s[0] = toupper(s[0]);
+        s[0] = toupper(s[0]); // Only first character is uppercase.
     }
 
     cout << s << endl;
