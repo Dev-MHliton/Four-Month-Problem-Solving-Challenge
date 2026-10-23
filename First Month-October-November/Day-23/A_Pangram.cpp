@@ -23,7 +23,7 @@ int main()
 
     for (char c : s)
     {
-        letters.insert(tolower(c));
+        letters.insert(tolower(c)); // character lowercase.
     }
 
     if (letters.size() == 26)
