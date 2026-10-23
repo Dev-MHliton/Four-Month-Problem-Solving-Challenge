@@ -13,33 +13,23 @@ int main()
 {
     fastio();
 
-#include <iostream>
-#include <set>
-#include <cctype>
-    using namespace std;
+    int n;
+    string s;
 
-    int main()
+    cin >> n;
+    cin >> s;
+
+    set<char> letters;
+
+    for (char c : s)
     {
-        int n;
-        string s;
-
-        cin >> n;
-        cin >> s;
-
-        set<char> letters;
-
-        for (char c : s)
-        {
-            letters.insert(tolower(c));
-        }
-
-        if (letters.size() == 26)
-            cout << "YES\n";
-        else
-            cout << "NO\n";
-
-        return 0;
+        letters.insert(tolower(c));
     }
+
+    if (letters.size() == 26)
+        cout << "YES\n";
+    else
+        cout << "NO\n";
 
     return 0;
 }
